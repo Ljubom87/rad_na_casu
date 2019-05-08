@@ -100,6 +100,16 @@ section{
     }
 }
 #pricing{
+    text-align: center;
+
+    .pricing_btn{
+        padding: 1em 3em;
+        color: white;
+        background-color: $main_red;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: none;
+    }
     table{
         width: 50%;
         margin: 0 auto;
@@ -167,5 +177,44 @@ footer{
         address, .map{
             float: none;
         }
+    }
+}
+@media screen and (max-width: 800px){
+    main{
+        height: auto;
+        background-image: none;
+        background-color: black;
+
+        h1{
+            margin-top: 2em;
+        }
+        header{
+            nav{
+                width: 100%;
+                text-align: center;
+                ul{
+                    li{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    #catalog{
+        .column{
+            width: 100%;
+        }
+    }
+    #pricing{
+
+        table{
+            display: none;
+        }
+        .pricing_btn{
+            display: inline-block;
+        }
+    }
+    footer{
+        padding: 2em;
     }
 }
